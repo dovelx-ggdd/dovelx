@@ -6,8 +6,8 @@
     "name": "WangZhen",
     "url": "https://github.com/dovelx-ggdd"
   },
-  "homepage": "https://github.com/dovelx-ggdd/dovelx-skill",
-  "repository": "https://github.com/dovelx-ggdd/dovelx-skill",
+  "homepage": "https://github.com/dovelx-ggdd/dovelx",
+  "repository": "https://github.com/dovelx-ggdd/dovelx",
   "license": "MIT",
   "skills": ["./skills/"],
   "agents": [

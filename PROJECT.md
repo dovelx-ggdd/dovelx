@@ -1,4 +1,4 @@
-# dovelx-skill
+# dovelx
 
 ## 一句话摘要
 

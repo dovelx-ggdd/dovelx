@@ -1,8 +1,8 @@
-# dovelx-skill
+# dovelx
 
 > 将 AI 融入开发流程的每一个环节——从需求到上线，每一步都有迹可循。
 
-`dovelx-skill` 是一套专业技能包，面向 [Claude Code](https://claude.ai/code) 与 [Cursor](https://cursor.com) Agent Skills / 插件市场，将需求分析、技术设计、代码审查与全栈工作流封装为可调用的 AI 角色，帮助独立开发者和小型团队以工程化方式驱动完整的软件开发生命周期。
+`dovelx` 是一套专业技能包，面向 [Claude Code](https://claude.ai/code) 与 [Cursor](https://cursor.com) Agent Skills / 插件市场，将需求分析、技术设计、代码审查与全栈工作流封装为可调用的 AI 角色，帮助独立开发者和小型团队以工程化方式驱动完整的软件开发生命周期。
 
 ---
 
@@ -83,8 +83,8 @@ Cursor **不使用** `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS`。编排类技能依
 在终端或 Claude Code 中执行：
 
 ```
-/plugin marketplace add dovelx-ggdd/dovelx-skill
-/plugin install dovelx@dovelx-skill
+/plugin marketplace add dovelx-ggdd/dovelx
+/plugin install dovelx@dovelx
 ```
 
 ### Cursor（本地插件目录，推荐）
@@ -97,16 +97,16 @@ Cursor **不使用** `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS`。编排类技能依
      - **macOS / Linux**
        ```bash
        mkdir -p ~/.cursor/plugins/local
-       ln -snf "<REPO_ROOT>" ~/.cursor/plugins/local/dovelx-skill
+       ln -snf "<REPO_ROOT>" ~/.cursor/plugins/local/dovelx
        ```
-     - **Windows**（目录联接 `mklink /J`，通常不需管理员提升；请将 `<REPO_ROOT>` 改为你的绝对路径，例如 `E:\work-space\dovelx-skill`）
+     - **Windows**（目录联接 `mklink /J`，通常不需管理员提升；请将 `<REPO_ROOT>` 改为你的绝对路径，例如 `E:\work-space\dovelx`）
        ```powershell
        $local = Join-Path $env:USERPROFILE ".cursor\plugins\local"
        New-Item -ItemType Directory -Force -Path $local | Out-Null
-       cmd /c mklink /J "$local\dovelx-skill" "<REPO_ROOT>"
+       cmd /c mklink /J "$local\dovelx" "<REPO_ROOT>"
        ```
-       若提示「文件已存在」，请先删除 `%USERPROFILE%\.cursor\plugins\local\dovelx-skill` 再执行联接命令。
-   - **复制**：将整个仓库文件夹复制到 `%USERPROFILE%\.cursor\plugins\local\dovelx-skill`（更新需重新复制）。
+       若提示「文件已存在」，请先删除 `%USERPROFILE%\.cursor\plugins\local\dovelx` 再执行联接命令。
+   - **复制**：将整个仓库文件夹复制到 `%USERPROFILE%\.cursor\plugins\local\dovelx`（更新需重新复制）。
 3. **重启 Cursor**，或在命令面板执行 **Developer: Reload Window**，使插件生效。
 4. 打开任意工作区，在 **Agent** 对话中输入 **`/`**，搜索 **`dovelx-…`**（与各 `SKILL.md` 中 `name` 一致）即可唤起技能。
 

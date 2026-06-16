@@ -67,9 +67,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.tag }}
-          name: "dovelx-skill ${{ steps.version.outputs.tag }}"
+          name: "dovelx ${{ steps.version.outputs.tag }}"
           body: |
-            ## dovelx-skill ${{ steps.version.outputs.tag }}
+            ## dovelx ${{ steps.version.outputs.tag }}
 
             ${{ steps.changelog.outputs.notes }}
 
@@ -78,8 +78,8 @@ jobs:
             ### 安装 / 更新（Claude Code）
 
             ```
-            /plugin marketplace add dovelx-ggdd/dovelx-skill
-            /plugin install dovelx@dovelx-skill
+            /plugin marketplace add dovelx-ggdd/dovelx
+            /plugin install dovelx@dovelx
             ```
 
             ### Cursor

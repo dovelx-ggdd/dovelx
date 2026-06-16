@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-`dovelx-skill` is a **declarative plugin package** (no compiled code) that delivers software-engineering workflow skills for Claude Code and Cursor. Skills are Markdown files with YAML frontmatter; agents are Markdown files that describe sub-agent roles. There is no runtime build step.
+`dovelx` is a **declarative plugin package** (no compiled code) that delivers software-engineering workflow skills for Claude Code and Cursor. Skills are Markdown files with YAML frontmatter; agents are Markdown files that describe sub-agent roles. There is no runtime build step.
 
 ## Validation Commands
 
@@ -28,9 +28,9 @@ Two GitHub Actions workflows in `.github/workflows/`:
 ## Installation (Claude Code)
 
 ```bash
-# Install from marketplace (dovelx-ggdd/dovelx-skill)
-/plugin marketplace add dovelx-ggdd/dovelx-skill
-/plugin install dovelx@dovelx-skill
+# Install from marketplace (dovelx-ggdd/dovelx)
+/plugin marketplace add dovelx-ggdd/dovelx
+/plugin install dovelx@dovelx
 ```
 
 ## Debugging Skills
@@ -57,10 +57,10 @@ The repository includes `.cursor-plugin/plugin.json`. For local development, sym
 
 ```bash
 # macOS / Linux
-ln -snf "$PWD" ~/.cursor/plugins/local/dovelx-skill
+ln -snf "$PWD" ~/.cursor/plugins/local/dovelx
 
 # Windows (PowerShell)
-cmd /c mklink /J "$env:USERPROFILE\.cursor\plugins\local\dovelx-skill" "$PWD"
+cmd /c mklink /J "$env:USERPROFILE\.cursor\plugins\local\dovelx" "$PWD"
 ```
 
 After symlinking, restart Cursor or run **Developer: Reload Window**. Skills appear in the Agent chat via `/dovelx-<skill-name>` — the directory name must match the `name` field in SKILL.md frontmatter, or Cursor will not discover them.

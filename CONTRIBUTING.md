@@ -1,6 +1,6 @@
 # 贡献指南
 
-感谢你对 `dovelx-skill` 的关注！本文档说明如何参与贡献。
+感谢你对 `dovelx` 的关注！本文档说明如何参与贡献。
 
 ---
 
@@ -27,14 +27,14 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/dovelx-ggdd/dovelx-skill.git
-cd dovelx-skill
+git clone https://github.com/dovelx-ggdd/dovelx.git
+cd dovelx
 
 # Claude Code：从本地路径安装（开发模式）
 /plugin install dovelx@./
 ```
 
-**Cursor（本地插件目录）：** 与终端用户相同——将本仓库根目录通过**符号链接**放入 `~/.cursor/plugins/local/dovelx-skill`（Windows 可用 `mklink /J`，详见仓库 [`README.md`](README.md)「Cursor（本地插件目录）」），然后 **Reload Window**。详见 [Cursor Plugins](https://cursor.com/docs/plugins)。
+**Cursor（本地插件目录）：** 与终端用户相同——将本仓库根目录通过**符号链接**放入 `~/.cursor/plugins/local/dovelx`（Windows 可用 `mklink /J`，详见仓库 [`README.md`](README.md)「Cursor（本地插件目录）」），然后 **Reload Window**。详见 [Cursor Plugins](https://cursor.com/docs/plugins)。
 
 清单与 Agent 路径的自动化校验：
 
